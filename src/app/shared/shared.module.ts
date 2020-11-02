@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+
 import { SidebarComponent } from './component/sidebar/sidebar.component';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
-import { MatSidenavModule, MatIconModule, MatTableModule , MatToolbarModule , MatListModule , MatButtonModule  } from '@angular/material'
+import { MatSidenavModule  } from '@angular/material/sidenav'
+import { MatToolbarModule  } from '@angular/material/toolbar'
+import { MatIconModule  } from '@angular/material/icon'
 
 
 // add modules here
@@ -14,8 +17,8 @@ const MODULES = [
     //  NgbModule
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule,
-    MatButtonModule,
+    // MatListModule,
+    // MatButtonModule,
     MatIconModule
     ];
 

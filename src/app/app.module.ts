@@ -5,15 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
-import { RouterModule } from '@angular/router';
+
 import { ContentComponent } from './shared/layouts/content/content.component';
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
+// import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
     ContentComponent,
 
-    MatToolbarModule,
+    // MatToolbarModule,
 
   ],
   imports: [
@@ -23,11 +24,11 @@ import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatBu
     SharedModule,
     RouterModule,
 
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatButtonModule,
-    MatIconModule
+    // MatToolbarModule,
+    // MatSidenavModule,
+    // MatListModule,
+    // MatButtonModule,
+    // MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
