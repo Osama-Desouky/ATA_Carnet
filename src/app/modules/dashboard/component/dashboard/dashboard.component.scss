@@ -1,0 +1,27 @@
+.details-btn{
+    width: 93px;
+    height: 36px;
+    background-color: #ffffff;
+    border: 1px solid #D7DAE2;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 2.2;
+    color: #656E7D;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 5%);
+
+    mat-icon{
+        font-size: 14px;
+        vertical-align: bottom;
+    }
+}
+.details-btn:focus {
+      outline: none
+    };
+    mat-row{
+        padding: 12px 5px;
+
+        mat-cell{
+            padding-left: 10px;
+        }
+    }

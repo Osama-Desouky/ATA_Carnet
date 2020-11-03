@@ -1,3 +1,95 @@
-<p>
-  dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!
-</p>
+<!-- start table -->
+
+<section class="table-section">
+<div class="row">
+  <div class="col-md-12">
+  <h2 class="red-header">
+    <img class="red-header-icon" src="../../../../../assets/images/Group 2532.png" alt="icon">
+    ATA carnet requests
+    <span>
+      <i class="fa fa-home"></i>
+    </span>
+  </h2>
+  <div class="example-container card-shadow">
+
+    <mat-table [dataSource]="dataSource" matSort>
+  
+     
+      <ng-container matColumnDef="position">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Carnet No </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.position}} </mat-cell>
+      </ng-container>
+  
+      
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Customer </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.name}}% </mat-cell>
+      </ng-container>
+  
+
+      <ng-container matColumnDef="weight">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Expire On </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.weight}} </mat-cell>
+      </ng-container>
+  
+    
+      <ng-container matColumnDef="symbol">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Commerce Chamber </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.symbol}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="status">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.status}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Actions</mat-header-cell>
+        <mat-cell *matCellDef="let row"> 
+          <button mat-flat-button class="details-btn" (click)="onDetails(row)">
+            Details
+          <span>
+            <mat-icon>arrow_forward</mat-icon>
+          </span>
+          </button>
+           </mat-cell>
+
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;">
+      </mat-row>
+    </mat-table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" showFirstLastButtons></mat-paginator>
+  </div>
+</div>
+</div>
+</section>
+<!-- end table -->
+
+<!-- start charts -->
+<section class="charts-section">
+
+<div class="row">
+  <div class="col-sm-12 col-md-6">
+    <h2 class="red-header">
+      <img class="red-header-icon" src="../../../../../assets/images/Group 2532.png" alt="icon">
+      Commerce chamber exports ATA
+      <span>
+        <i class="fa fa-home"></i>
+      </span>
+    </h2>
+  </div>
+  <div class="col-sm-12 col-md-6">
+    <h2 class="red-header">
+      <img class="red-header-icon" src="../../../../../assets/images/Group 2532.png" alt="icon">
+      Exports / Imports Numbers by Year
+      <span>
+        <i class="fa fa-home"></i>
+      </span>
+    </h2>
+  </div>
+</div>
+</section>
+<!-- end charts -->
