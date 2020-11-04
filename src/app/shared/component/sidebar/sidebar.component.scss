@@ -93,3 +93,33 @@
       right: 8px
     }
   }
+
+  // footer
+  .soudiFooter{
+    color: #656E7D;
+    line-height: 23px;
+    padding-left: 9px;
+   
+  }
+  .footerlinks{
+    color: #656E7D;
+    line-height: 23px;
+    float: left;
+    width: 51px;
+    height: 37px;
+    margin: 5px 10px;
+    a{
+      color: #656E7D;
+    }
+  }
+      .footer-link-border{
+        width: 1px;
+      height: 29px;
+      background-color: #D1D1D1;
+      margin: 6px 1px;
+      }
+
+  .custom-width{
+    width: 81px;
+    margin-right: 37px;
+  }

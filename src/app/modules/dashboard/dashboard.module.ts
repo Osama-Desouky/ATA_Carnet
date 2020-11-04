@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SharedModule } from 'src/app/shared/shared.module';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+
+import {ChartModule} from 'primeng/chart'
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { FormsModule } from '@angular/forms';
 
@@ -15,11 +19,15 @@ import { MatIconModule } from '@angular/material/icon';
 // add modules here
 const MODULES = [
   CommonModule,
+  // BrowserAnimationsModule,
   DashboardRoutingModule,
   SharedModule,
   MatTableModule,
   MatPaginatorModule,
-  MatIconModule
+  MatIconModule,
+  MatSelectModule,
+  MatButtonToggleModule,
+  ChartModule
 //   NgbModule,
 //   FormsModule,
 ];

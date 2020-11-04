@@ -132,10 +132,13 @@ color: #5F6165;
     border-radius: 4px;
     width: 77px;
     height: 36px;
-    padding: 8px 10px 5px !important;
+    padding: 8px 13px 5px !important;
     .mat-select-value{
         font-size: 16px;
     }
+}
+.mat-paginator-page-size-select {
+    width: 77px !important;
 }
 // 
 // toolbar
@@ -146,4 +149,20 @@ color: #5F6165;
 // main styles
 .card-shadow{
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.10)
+}
+
+.mat-button-toggle-appearance-standard .mat-button-toggle-label-content{
+    line-height: 22px !important ;
+    padding: 7px 12px !important;
+}
+.mat-button-toggle-button{
+    outline: none;
+}
+
+// footer
+.full-width-line{
+    margin-top: 59.5px;
+    margin-bottom: 25px;
+    background-color: #DEE1E5;
+    height: 1px;
 }

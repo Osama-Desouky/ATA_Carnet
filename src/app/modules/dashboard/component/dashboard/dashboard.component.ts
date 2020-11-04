@@ -24,7 +24,66 @@ export class DashboardComponent implements AfterViewInit {
     console.log(row);
     
   }
+
+  data: any;
+  data2: any;
+  constructor() {
+    this.data = {
+      labels: [
+        '2015',
+        '2016',
+        '2017',
+        '2018',
+        '2019',
+      ],
+      datasets: [
+       
+        {
+          label: '2020',
+          backgroundColor: '#CF893C',
+          borderColor: '#7CB342',
+          data: [28, 48, 40, 19, 86, 27, 90],
+        },
+      ],
+    };
+
+    this.data2 = {
+      labels: ['Ryadh','Dammam','Jeddah' ,'D'],
+      datasets: [
+          {
+              data: [300, 50, 100 , 180],
+              backgroundColor: [
+                  "#C97921",
+                  "#8F8A42",
+                  "#740000",
+                  '#ADA684'
+              ],
+              hoverBackgroundColor: [
+                "#C97921",
+                "#8F8A42",
+                "#740000",
+                '#ADA684'
+              ]
+          }]    
+      };
+
+  }
+
+  years: Food[] = [
+    {value: '1', viewValue: '2020'},
+    {value: '2', viewValue: '2021'},
+    {value: '3', viewValue: '2022'}
+  ];
 }
+
+export interface Food {
+  value: string;
+  viewValue: string;
+}
+
+ 
+
+
 
 export interface PeriodicElement {
   name: string;

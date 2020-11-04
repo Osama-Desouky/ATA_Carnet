@@ -6,6 +6,7 @@ export const content: Routes = [
 //     path: 'dash',
 //     component: DashboardComponent,
 //   },
+{ path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   {
     path: 'dashboard',
     loadChildren: () =>

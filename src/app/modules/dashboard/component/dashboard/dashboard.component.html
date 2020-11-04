@@ -80,6 +80,19 @@
         <i class="fa fa-home"></i>
       </span>
     </h2>
+    <div class="example-container card-shadow charts-padding charts-main">
+      <div class="row">
+        <div class="col-md-3 offset-md-9">
+        <mat-select class="chart-select"  value='all'>
+          <mat-option value='all'>All</mat-option>
+          <mat-option *ngFor="let year of years" [value]="year.value">
+            {{year.viewValue}}
+          </mat-option>
+        </mat-select>
+      </div>
+    </div>
+    <p-chart type="doughnut" [data]="data2"></p-chart>
+  </div>
   </div>
   <div class="col-sm-12 col-md-6">
     <h2 class="red-header">
@@ -89,6 +102,23 @@
         <i class="fa fa-home"></i>
       </span>
     </h2>
+    <div class="example-container card-shadow charts-padding charts-main">
+      <div>
+        <mat-button-toggle-group #group="matButtonToggleGroup" class="barChat-toggleBtns"  value="Exports">
+          <mat-button-toggle value="Exports" class="exports-btn" >
+            Exports
+          </mat-button-toggle>
+         
+          <mat-button-toggle value="Imports" class="imports-btn">
+            Imports
+          </mat-button-toggle>
+          
+        </mat-button-toggle-group>
+        <div class="button-selected-value"> {{group.value}} Numbers by year</div>
+      </div>
+        <p-chart type="bar" [data]="data"></p-chart>
+      
+    </div>
   </div>
 </div>
 </section>
