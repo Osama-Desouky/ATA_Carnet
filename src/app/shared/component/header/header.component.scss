@@ -1,7 +1,74 @@
-.example-icon {
+// .example-icon {
+//     padding: 0 14px;
+//   }
+  
+//   .example-spacer {
+//     flex: 1 1 auto;
+//   }
+// a {
+//   text-decoration: none;
+//   color: white;
+// }
+
+
+.dashboard-toolbar{
+  background-color: #fff;
+  height: 70px;
+  border-bottom: 2px solid #F2F2F2;
+  // width: 1279px;
+  // margin: auto 9px;
+  .dashboard-app-name{
+    font-size: 22px;
+    font-family: 'sourceSansProBold', 'arial', sans-serif !important;
+    color: #3A0000;
+  }
+.dashboard-app-name:hover{
+  text-decoration: none
+}
+
+  .dashboard-icon {
     padding: 0 14px;
   }
   
-  .example-spacer {
+  .dashboard-spacer {
     flex: 1 1 auto;
   }
+  button{
+    border: 0;
+     margin: 10px 14px ;
+     background-color: #fff;
+     width: 38px;
+     height: 38px;
+    mat-icon{
+      color: #5F6165;
+
+    }
+  }
+  button:focus {
+    outline: none
+  }
+  .arabic-btn{
+    font-size: 14px;
+    color: #5F6165;
+    background-color: #F2F2F2;
+    border: 0;
+    border-radius: 8px;
+    width: 60px;
+    height: 35px;
+  }
+  .new-notification{
+    width: 7.2px;
+    height: 7.2px;
+    border-radius: 50px;
+    background-color: #B50C00;
+    position: absolute;
+    top: 6px;
+    right: 8px
+  }
+}
+
+@media(max-width: 959px){
+  mat-toolbar{
+      border-radius: 0px;
+  }
+}

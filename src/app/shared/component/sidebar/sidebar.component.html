@@ -1,4 +1,4 @@
-<mat-sidenav-container class="example-container" autosize>
+<!-- <mat-sidenav-container class="example-container" autosize>
   <mat-sidenav
     #sidenav
     class="example-sidenav"
@@ -112,4 +112,123 @@
 </div>
   </footer>
 </div>
-</mat-sidenav-container>
+</mat-sidenav-container> -->
+
+
+
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+		<mat-nav-list>
+			<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+			  <span class="full-width" *ngIf="isExpanded || isShowing"
+				>Parent Menu</span
+			  >
+			  <mat-icon mat-list-icon>home</mat-icon>
+			  <mat-icon
+				class="menu-button"
+				[ngClass]="{ rotated: showSubmenu }"
+				*ngIf="isExpanded || isShowing"
+			  >
+				expand_more</mat-icon
+			  >
+			</mat-list-item>
+			<div
+			  class="submenu"
+			  [ngClass]="{ expanded: showSubmenu }"
+			  *ngIf="isShowing || isExpanded"
+			>
+			  <a mat-list-item href="...">Submenu Item 1</a>
+			  <a mat-list-item href="...">Submenu Item 2</a>
+			  <mat-list-item
+				(click)="showSubSubMenu = !showSubSubMenu"
+				class="parent"
+			  >
+				<span class="full-width" *ngIf="isExpanded || isShowing"
+				  >Nested Menu</span
+				>
+				<mat-icon
+				  class="menu-button"
+				  [ngClass]="{ rotated: showSubSubMenu }"
+				  *ngIf="isExpanded || isShowing"
+				  >expand_more</mat-icon
+				>
+			  </mat-list-item>
+			  <div
+				class="submenu"
+				[ngClass]="{ expanded: showSubSubMenu }"
+				*ngIf="isShowing || isExpanded"
+			  >
+				<mat-list-item>SubSubmenu Item 1</mat-list-item>
+				<mat-list-item>SubSubmenu Item 2</mat-list-item>
+			  </div>
+			</div>
+		  </mat-nav-list>
+		  <mat-nav-list> </mat-nav-list>
+      <!--this is a place for us to add side-nav code-->
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+		<!-- lap nav -->
+		<mat-sidenav  class="example-sidenav hideNav"
+		mode="side"
+		opened="true" >
+			<mat-nav-list>
+				<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+				  <span class="full-width" *ngIf="isExpanded || isShowing"
+					>Parent Menu 5</span
+				  >
+				  <mat-icon mat-list-icon>home</mat-icon>
+				  <mat-icon
+					class="menu-button"
+					[ngClass]="{ rotated: showSubmenu }"
+					*ngIf="isExpanded || isShowing"
+				  >
+					expand_more</mat-icon
+				  >
+				</mat-list-item>
+				<div
+				  class="submenu"
+				  [ngClass]="{ expanded: showSubmenu }"
+				  *ngIf="isShowing || isExpanded"
+				>
+				  <a mat-list-item href="...">Submenu Item 1</a>
+				  <a mat-list-item href="...">Submenu Item 2</a>
+				  <mat-list-item
+					(click)="showSubSubMenu = !showSubSubMenu"
+					class="parent"
+				  >
+					<span class="full-width" *ngIf="isExpanded || isShowing"
+					  >Nested Menu</span
+					>
+					<mat-icon
+					  class="menu-button"
+					  [ngClass]="{ rotated: showSubSubMenu }"
+					  *ngIf="isExpanded || isShowing"
+					  >expand_more</mat-icon
+					>
+				  </mat-list-item>
+				  <div
+					class="submenu"
+					[ngClass]="{ expanded: showSubSubMenu }"
+					*ngIf="isShowing || isExpanded"
+				  >
+					<mat-list-item>SubSubmenu Item 14444</mat-list-item>
+				  </div>
+				</div>
+			  </mat-nav-list>
+			  <mat-nav-list> </mat-nav-list>
+		  <!--this is a place for us to add side-nav code-->
+		</mat-sidenav>
+
+
+	  <!--in here all the content must reside. We will add a navigation header as well-->
+	  <div class="body-margin">
+
+		  <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+		  <main>
+			<router-outlet></router-outlet>
+		  </main>
+	  </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
