@@ -1,0 +1,90 @@
+
+ .full-width {
+   width: 100%;
+ }
+ .menu-button {
+   transition: 300ms ease-in-out;
+   transform: rotate(0deg);
+ }
+ .menu-button.rotated {
+   transform: rotate(180deg);
+ }
+ .submenu {
+   overflow-y: hidden;
+   transition: transform 300ms ease;
+   transform: scaleY(0);
+   transform-origin: top;
+//    padding-left: 32px;
+//    padding-right: 32px;
+ }
+ .submenu.expanded {
+   transform: scaleY(1);
+ }
+
+
+//  
+
+.logo{
+    margin-left: 32px;
+    margin-top: 24px;
+    margin-bottom: 114px;
+}
+.parent {
+    height: 48px !important;
+    width: 285px !important;
+    margin: 5px 32px !important;
+    margin-top: 5px;
+}
+
+
+// .mat-list-option:hover, .mat-list-option:focus, .mat-nav-list .mat-list-item:hover, .mat-nav-list .mat-list-item:focus, .mat-action-list .mat-list-item:hover, .mat-action-list .mat-list-item:focus {
+//     background: none;
+// }
+// .mat-list-item-content{
+//     color: #656E7D !important;
+    
+// }
+// .mat-list-item-content:hover {
+//     background-color: #f0f0f0 !important;
+// }
+::ng-deep .mat-list-item-content:hover {
+    background-color:  rgba(0, 0, 0, 0.06) !important;
+    border-radius:8px ;
+    transition: transform 300ms ease
+}
+
+::ng-deep .with-child .mat-list-item-content:hover {
+    background-color:#ECEFF1 !important;
+}
+::ng-deep .mat-drawer.mat-drawer-side {
+    box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.10);
+    background-color: #ECEFF1;
+}
+.mat-list-base .mat-list-item .mat-list-icon, .mat-list-base .mat-list-option .mat-list-icon {
+
+    padding: 4px 4px 4px 0px;
+    font-size: 20px;
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+}
+::ng-deep .mat-list-item-content{
+    color: #656E7D ;
+    
+}
+
+::ng-deep .active-list-item {
+    background-color: #E7D9C9;
+        border-radius: 8px;
+        .mat-list-item-content{
+            
+            color: #810000!important;
+        }
+  }
+  ::ng-deep .active-list-item :hover {
+    background-color: #E7D9C9 !important;
+        border-radius: 8px;
+        color: #810000!important;
+  }
+
+  

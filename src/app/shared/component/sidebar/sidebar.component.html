@@ -119,7 +119,8 @@
 
 <mat-sidenav-container>
     <mat-sidenav #sidenav role="navigation">
-		<mat-nav-list>
+		<app-sidebar-items></app-sidebar-items>
+		<!-- <mat-nav-list>
 			<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
 			  <span class="full-width" *ngIf="isExpanded || isShowing"
 				>Parent Menu</span
@@ -164,7 +165,7 @@
 			  </div>
 			</div>
 		  </mat-nav-list>
-		  <mat-nav-list> </mat-nav-list>
+		  <mat-nav-list> </mat-nav-list> -->
       <!--this is a place for us to add side-nav code-->
     </mat-sidenav>
     <mat-sidenav-content>
@@ -173,7 +174,8 @@
 		<mat-sidenav  class="example-sidenav hideNav"
 		mode="side"
 		opened="true" >
-			<mat-nav-list>
+		<app-sidebar-items></app-sidebar-items>
+			<!-- <mat-nav-list>
 				<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
 				  <span class="full-width" *ngIf="isExpanded || isShowing"
 					>Parent Menu 5</span
@@ -217,7 +219,7 @@
 				  </div>
 				</div>
 			  </mat-nav-list>
-			  <mat-nav-list> </mat-nav-list>
+			  <mat-nav-list> </mat-nav-list> -->
 		  <!--this is a place for us to add side-nav code-->
 		</mat-sidenav>
 

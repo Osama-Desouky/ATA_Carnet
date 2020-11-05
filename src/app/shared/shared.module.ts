@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './component/header/header.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
+import { SidebarItemsComponent } from './component/sidebar/sidebar-items/sidebar-items.component';
 
 
 // add modules here
@@ -36,6 +37,7 @@ const COMPONENTS = [
 //   HeaderComponent,
 //   FooterComponent,
   SidebarComponent,
+  SidebarItemsComponent,
   HeaderComponent
 //   NavModuleComponent,
 ];

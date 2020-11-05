@@ -20,9 +20,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 
-/**
- * @title Autosize sidenav
- */
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
