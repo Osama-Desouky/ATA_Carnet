@@ -2,6 +2,7 @@ import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-dashboard',
@@ -74,6 +75,34 @@ export class DashboardComponent implements AfterViewInit {
     {value: '2', viewValue: '2021'},
     {value: '3', viewValue: '2022'}
   ];
+
+  // carousel
+
+  customOptions: OwlOptions = {
+    margin: 15,
+    loop: false,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: true,
+    nav: true,
+    navSpeed: 700,
+    navText: ["<img src='../../../../../assets/images/prev.svg'>","<img src='../../../../../assets/images/next.svg'>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+  }
 }
 
 export interface Food {

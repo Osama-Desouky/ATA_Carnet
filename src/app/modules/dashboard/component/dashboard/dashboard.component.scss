@@ -86,3 +86,109 @@
     color: #434343;
     font-size: 15px;
   }
+
+
+//   carousel
+.carosel{
+    margin-bottom: 49px;
+    margin-top: 35px;
+}
+// .first-slider{
+// margin:auto 15px auto 5px ;
+// }
+.background-one{
+    background: rgb(239,187,96);
+    background: linear-gradient(163deg, rgba(239,187,96,1) 0%, rgba(207,49,0,1) 50%, rgba(101,7,0,1) 100%);
+}
+.background-two{
+    background: rgb(201,216,94);
+background: linear-gradient(163deg, rgba(201,216,94,1) 0%, rgba(125,120,48,1) 100%);
+}
+.background-three{
+    background: rgb(55,189,248);
+    background: linear-gradient(168deg, rgba(55,189,248,1) 0%, rgba(157,46,91,1) 100%);
+}
+.background-four{
+    background: rgb(40,167,65);
+    background: linear-gradient(168deg, rgba(40,167,65,1) 0%, rgba(85,195,245,1) 100%);
+}
+::ng-deep.mat-card {
+    border-radius: 20px !important;
+    height: 164px;
+    margin: 0;
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 18%) !important;
+    padding-top: 18px !important;
+    padding-left: 20px !important;
+    padding-bottom: 14px !important;
+    padding-right: 22px !important;
+    color: #fff;
+
+   
+    .mat-card-header{
+        font-size: 18px !important;
+        color: #fff;
+        line-height: 23px;
+
+        .mat-card-header-text{
+            margin: 0 !important;
+        }
+    }
+
+    .mat-card-footer{
+        float: right;
+        font-size: 14px;
+        opacity: 80%;
+        margin: 0;    
+    }
+
+    .mat-card-content{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    .slider-img{
+        width: 59px;
+        height: 48px;
+        display: inline-block;
+    }
+    .slider-img-two{
+width: 93px;
+height: 48px;
+display: inline-block;
+    }
+    .content-number{
+        font-size: 50px;
+        font-family: "sourceSansProBold", "arial", sans-serif;
+        float: right;
+        // line-height: 24px;
+    }
+
+}
+}
+::ng-deep.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #869791;
+    background: #B36E22;
+}
+// ::ng-deep.owl-theme .owl-nav {
+//     background-color: #ffffff;
+// }
+::ng-deep.owl-nav {
+    .owl-prev{
+        background-color: transparent !important;
+        position: absolute;
+        top: 5em;
+        left: -23px;
+        padding: 0 !important;
+
+        img{
+            width: 18px;
+        }}
+    .owl-next{
+        background-color: transparent !important;
+        position: absolute;
+        top: 5em;
+        right: -23px;
+        padding: 0 !important;
+    img{
+        width: 18px;
+    }
+    }
+}

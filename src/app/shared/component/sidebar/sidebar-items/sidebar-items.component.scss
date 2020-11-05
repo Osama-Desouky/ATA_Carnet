@@ -59,6 +59,7 @@
 ::ng-deep .mat-drawer.mat-drawer-side {
     box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.10);
     background-color: #ECEFF1;
+    position: fixed;
 }
 .mat-list-base .mat-list-item .mat-list-icon, .mat-list-base .mat-list-option .mat-list-icon {
 
@@ -67,6 +68,14 @@
     width: 18px;
     height: 18px;
     margin-right: 12px;
+}
+
+.icon-nav{
+  // padding: 4px 4px 4px 0px;
+  // font-size: 20px;
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
 }
 ::ng-deep .mat-list-item-content{
     color: #656E7D ;

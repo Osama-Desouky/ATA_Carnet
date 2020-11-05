@@ -1,26 +1,6 @@
-   <!-- <mat-toolbar class="example-toolbar">
-    <button mat-icon-button ><mat-icon>menu</mat-icon></button>
-    <h1 class="example-app-name">Dashboard</h1>
-    <span class="example-spacer"></span>
-    <button mat-flat-button>Basic</button>
-    <mat-icon
-      class="example-icon"
-      aria-hidden="false"
-      aria-label="Example heart icon"
-      >favorite</mat-icon
-    >
-    <mat-icon
-      class="example-icon"
-      aria-hidden="false"
-      aria-label="Example delete icon"
-      >delete</mat-icon
-    >
-  </mat-toolbar> -->
-
-
   <mat-toolbar  class="dashboard-toolbar">
     <div fxHide.gt-xs>
-        <button mat-icon-button (click)="onToggleSidenav()" class="d-block d-sm-none">
+        <button mat-icon-button (click)="onToggleSidenav()" class="d-block d-lg-none">
           <!-- <button mat-icon-button (click)="onToggleSidenav()"> -->
             <mat-icon>menu</mat-icon>
         </button>
@@ -30,23 +10,19 @@
     </div>
     <span class="dashboard-spacer sm-none"></span>
     <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs class="d-none d-sm-block">
-        <!-- <ul fxLayout fxLayoutGap="15px" class="navigation-items"> -->
-            <!-- <li> -->
+      
               <button mat-flat-button class="arabic-btn" >عربي</button>
-            <!-- </li> -->
-            <!-- <li> -->
+
               <button mat-icon-button aria-label="Example icon button with a home icon">
                 <mat-icon>notifications_none</mat-icon>
                 <span class="new-notification">
                   </span>
                 </button>
-            <!-- </li> -->
-            <!-- <li> -->
+
               <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
                 <mat-icon>person_outline</mat-icon>
                 </button>
-            <!-- </li> -->
-        <!-- </ul> -->
+
     </div>
   </mat-toolbar>
 

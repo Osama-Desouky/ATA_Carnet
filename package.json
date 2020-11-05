@@ -23,6 +23,7 @@
     "@angular/router": "~11.0.0-rc.1",
     "bootstrap": "^4.5.3",
     "chart.js": "^2.9.4",
+    "ngx-owl-carousel-o": "^4.0.0",
     "primeicons": "^4.0.0",
     "primeng": "^10.0.3",
     "rxjs": "~6.5.4",

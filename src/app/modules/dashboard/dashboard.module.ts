@@ -10,8 +10,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatCardModule} from '@angular/material/card';
 
 import {ChartModule} from 'primeng/chart'
+import { CarouselModule } from 'ngx-owl-carousel-o';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { FormsModule } from '@angular/forms';
 
@@ -27,7 +29,9 @@ const MODULES = [
   MatIconModule,
   MatSelectModule,
   MatButtonToggleModule,
-  ChartModule
+  MatCardModule,
+  ChartModule,
+  CarouselModule,
 //   NgbModule,
 //   FormsModule,
 ];
