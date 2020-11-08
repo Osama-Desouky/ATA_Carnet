@@ -27,7 +27,10 @@ export class DashboardComponent implements AfterViewInit {
   }
 
   data: any;
+  barOptions:any
+
   data2: any;
+  donutOptions: any
   constructor() {
     this.data = {
       labels: [
@@ -47,9 +50,25 @@ export class DashboardComponent implements AfterViewInit {
         },
       ],
     };
+    this.barOptions = {
+    
+      legend: {
+        display:false,
+      },
+       scales: {
+                xAxes: [{
+                    stacked: false,
+                    categoryPercentage: 0.5, 
+                    barPercentage: 0.5 
+                }],
+                yAxes: [{
+                    stacked: false
+                }]
+            },
+  };
 
     this.data2 = {
-      labels: ['Ryadh','Dammam','Jeddah' ,'D'],
+      labels: ['Ryadh','Dammam','Jeddah' ,'Najran'],
       datasets: [
           {
               data: [300, 50, 100 , 180],
@@ -68,6 +87,14 @@ export class DashboardComponent implements AfterViewInit {
           }]    
       };
 
+      this.donutOptions = {
+    
+        legend: {
+          display:false,
+            // position: 'right'
+        }
+    };
+
   }
 
   years: Food[] = [
@@ -79,7 +106,7 @@ export class DashboardComponent implements AfterViewInit {
   // carousel
 
   customOptions: OwlOptions = {
-    margin: 30,
+    margin: 20,
     loop: false,
     mouseDrag: false,
     touchDrag: false,

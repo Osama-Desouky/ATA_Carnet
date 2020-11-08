@@ -7,7 +7,7 @@
   <owl-carousel-o [options]="customOptions">
     <ng-template  carouselSlide style="width:285px">
 
-      <mat-card class="first-slider background-one">
+      <mat-card class="first-slider background-one my-width" >
         <mat-card-header>
           <mat-card-title>New Request</mat-card-title>
         </mat-card-header>
@@ -29,7 +29,7 @@
 
     <ng-template  carouselSlide style="width:285px">
 
-      <mat-card class="first-slider background-two" >
+      <mat-card class="first-slider background-two my-width" >
         <mat-card-header>
           <mat-card-title>Total Export ATA</mat-card-title>
         </mat-card-header>
@@ -51,7 +51,7 @@
 
     <ng-template  carouselSlide style="width:285px">
 
-      <mat-card class="first-slider background-three" >
+      <mat-card class="first-slider background-three my-width" >
         <mat-card-header>
           <mat-card-title>Total Import ATA</mat-card-title>
         </mat-card-header>
@@ -73,7 +73,7 @@
 
     <ng-template  carouselSlide style="width:285px">
 
-      <mat-card class="first-slider background-four"  >
+      <mat-card class="first-slider background-four my-width"  >
         <mat-card-header>
           <mat-card-title>Open Export ATA</mat-card-title>
         </mat-card-header>
@@ -95,7 +95,7 @@
 
     <ng-template  carouselSlide style="width:285px">
 
-      <mat-card class="first-slider background-one">
+      <mat-card class="first-slider background-one my-width">
         <mat-card-header>
           <mat-card-title>New Request</mat-card-title>
         </mat-card-header>
@@ -204,17 +204,47 @@
       </span>
     </h2>
     <div class="example-container card-shadow charts-padding charts-main">
-      <div class="row">
-        <div class="col-md-3 offset-md-9">
-        <mat-select class="chart-select"  value='all'>
-          <mat-option value='all'>All</mat-option>
-          <mat-option *ngFor="let year of years" [value]="year.value">
-            {{year.viewValue}}
-          </mat-option>
-        </mat-select>
-      </div>
+      <!-- <div class="row">
+        <div class="col-md-3 offset-md-9"> -->
+          <div class="select-div">
+            
+            <mat-select class="chart-select"  value='all'>
+              <mat-option value='all'>All</mat-option>
+              <mat-option *ngFor="let year of years" [value]="year.value">
+                {{year.viewValue}}
+              </mat-option>
+            </mat-select>
+          </div>
+      <!-- </div>
+    </div> -->
+    <p-chart type="doughnut" [data]="data2" [options]='donutOptions' width="275px" height="275px"></p-chart>
+    <div class="donut-legends">
+
+     <div class="legend-row">
+       <div class="donut-curcle donut-color1"></div>
+      <span class="name" >Ryadh</span>
+      <span class="description"> 2500 Export ATA</span>
+
+     </div>
+     <div class="legend-row">
+      <div class="donut-curcle donut-color2"></div>
+     <span class="name" >Dammam</span>
+     <span class="description"> 2500 Export ATA</span>
+
     </div>
-    <p-chart type="doughnut" [data]="data2"></p-chart>
+    <div class="legend-row">
+      <div class="donut-curcle donut-color3"></div>
+     <span class="name" >Jeddah</span>
+     <span class="description"> 2500 Export ATA</span>
+
+    </div>
+    <div class="legend-row">
+      <div class="donut-curcle donut-color4"></div>
+     <span class="name" >Najran</span>
+     <span class="description"> 2500 Export ATA</span>
+
+    </div>
+    </div>
   </div>
   </div>
   <div class="col-sm-12 col-md-6">
@@ -239,7 +269,7 @@
         </mat-button-toggle-group>
         <div class="button-selected-value"> {{group.value}} Numbers by year</div>
       </div>
-        <p-chart type="bar" [data]="data"></p-chart>
+        <p-chart type="bar" [data]="data" [options]='barOptions'></p-chart>
       
     </div>
   </div>

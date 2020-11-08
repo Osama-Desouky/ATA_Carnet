@@ -55,10 +55,13 @@
     }
     .charts-main{
         background-color: #ffffff;
-        min-height: 436px;
+        min-height: 485px;
     }
     .charts-section{
         margin-top: 49px;
+    }
+    .select-div{
+        margin-left: 80%;
     }
     .chart-select{
     border: 1px solid #D7DAE2;
@@ -75,6 +78,7 @@
         font-size: 15px;
     }
     }
+    
 
     .barChat-toggleBtns{
         // border: 1px solid #D7DAE2;
@@ -101,6 +105,48 @@
     margin: 15px 0;
     color: #434343;
     font-size: 15px;
+  }
+
+  .donut-legends{
+    position: absolute;
+    top: 40%;
+    right: 7%;
+    .legend-row{
+        margin-bottom: 21px;
+    }
+    .donut-curcle{
+        width: 16px !important;
+        height: 16px;
+        // border: 3px solid #C97921;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .name{
+        font-size: 15px;
+        color: #242424;
+        margin-left: 8px;
+    }
+    .description{
+    font-size: 14px;
+    color: #242424;
+    opacity: 50%;
+    margin-left: 80px;
+    float: right;
+    }
+    .donut-color1{
+        border: 3px solid #C97921;
+    }
+    .donut-color2{
+        border: 3px solid #8F8A42;
+    }
+    .donut-color3{
+        border: 3px solid #740000;
+    }
+    .donut-color4{
+        border: 3px solid #ADA684;
+
+    }
   }
 
 
@@ -213,6 +259,16 @@ display: inline-block;
         display: none !important;
     }
 }
-// ::ng-deep .owl-carousel .owl-item {
-//     width: 285px !important;
-// }
+::ng-deep .owl-carousel {
+    .owl-stage{
+        height: 195px;
+    }
+    .owl-item {
+        // width: 285px !important;
+        border-radius: 20px;
+    }
+}
+
+.my-width{
+    width: 285px !important;
+}

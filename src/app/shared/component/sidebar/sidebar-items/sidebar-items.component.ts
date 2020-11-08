@@ -10,7 +10,7 @@ export class SidebarItemsComponent  {
 
   @ViewChild('sidenav') sidenav: MatSidenav;
   isExpanded = true;
-  showSubmenu: boolean = false;
+  showSubmenu: boolean = true;
   isShowing = false;
   showSubSubMenu: boolean = false;
 

@@ -17,7 +17,8 @@
 
 
 
-import { Component, ViewChild } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, HostListener, Inject, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
@@ -31,6 +32,7 @@ export class SidebarComponent  {
   showSubmenu: boolean = false;
   isShowing = false;
   showSubSubMenu: boolean = false;
+  constructor(@Inject(DOCUMENT) private document: Document) { }
 
   mouseenter() {
     if (!this.isExpanded) {
@@ -41,6 +43,15 @@ export class SidebarComponent  {
   mouseleave() {
     if (!this.isExpanded) {
       this.isShowing = false;
+    }
+  }
+  
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if (document.body.scrollTop > 20 ||     
+    document.documentElement.scrollTop > 20) {
+      document.getElementById('onscroll').classList.add('red');
+      // document.getElementById('paragraph').classList.add('green');
     }
   }
 }
