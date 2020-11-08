@@ -1,22 +1,12 @@
-// .example-icon {
-//     padding: 0 14px;
-//   }
-  
-//   .example-spacer {
-//     flex: 1 1 auto;
-//   }
-// a {
-//   text-decoration: none;
-//   color: white;
-// }
-
-
 .dashboard-toolbar{
   background-color: #fff;
   height: 70px;
-  border-bottom: 2px solid #F2F2F2;
-  // width: 1279px;
-  // margin: auto 9px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  // -webkit-backdrop-filter:blur(30px) brightness(15) opacity(0);
+  backdrop-filter: blur(30px) brightness(15) opacity(0);
+  background-color: rgba(255, 255, 255, 0.5);
+  // position: fixed;
+  z-index: 99;
   .dashboard-app-name{
     font-size: 22px;
     font-family: 'sourceSansProBold', 'arial', sans-serif !important;
@@ -44,6 +34,12 @@
 
     }
   }
+  .header-btn-icon{
+   i{
+    font-size: 20px;
+    color: #5F6165;
+   }
+  }
   button:focus {
     outline: none
   }
@@ -64,11 +60,5 @@
     position: absolute;
     top: 6px;
     right: 8px
-  }
-}
-
-@media(max-width: 959px){
-  mat-toolbar{
-      border-radius: 0px;
   }
 }

@@ -3,25 +3,22 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { SidebarComponent } from './component/sidebar/sidebar.component';
-// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-// import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
 import { MatSidenavModule  } from '@angular/material/sidenav';
 import { MatToolbarModule  } from '@angular/material/toolbar';
 import { MatIconModule  } from '@angular/material/icon';
-// import {  MatTableModule } from '@angular/material/table';
 import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './component/header/header.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select'
 import { SidebarItemsComponent } from './component/sidebar/sidebar-items/sidebar-items.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 
 // add modules here
 const MODULES = [
     CommonModule, 
     RouterModule,
-    //  NgbModule
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
@@ -29,19 +26,14 @@ const MODULES = [
     MatBadgeModule,
     MatButtonModule,
     MatSelectModule,
-    // MatNavList
-    // MatTableModule,
-    // MatListModule,
     ];
 
 // add components here
 const COMPONENTS = [
-//   HeaderComponent,
-//   FooterComponent,
   SidebarComponent,
   SidebarItemsComponent,
-  HeaderComponent
-//   NavModuleComponent,
+  HeaderComponent,
+  FooterComponent
 ];
 
 // add directives here

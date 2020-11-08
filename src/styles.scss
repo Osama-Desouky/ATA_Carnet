@@ -96,7 +96,7 @@ $base-red-two: #987349;
 
 // table styles
 .mat-table{
-    padding: 0 7px;
+    padding: 20px 7px 10px;
 }
 // table header
 mat-cell:first-of-type, mat-header-cell:first-of-type, mat-footer-cell:first-of-type {
@@ -188,4 +188,20 @@ color: #5F6165;
 // .mat-drawer.mat-drawer-side {
 //     box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.10);
 //     background-color: #ECEFF1;
+// }
+
+.col-3{
+    max-width: 21.215%;
+}
+.col-md-9{
+    max-width: 78.785%;
+}
+.container{
+    padding: 0;
+}
+// @media(min-width:1200px){
+.container{
+    max-width: 85.9375% ;
+}
+
 // }

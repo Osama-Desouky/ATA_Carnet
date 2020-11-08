@@ -79,13 +79,15 @@ export class DashboardComponent implements AfterViewInit {
   // carousel
 
   customOptions: OwlOptions = {
-    margin: 15,
+    margin: 30,
     loop: false,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
     dots: true,
     nav: true,
+    autoWidth:true,
+    // items:4,
     navSpeed: 700,
     navText: ["<img src='../../../../../assets/images/prev.svg'>","<img src='../../../../../assets/images/next.svg'>"],
     responsive: {

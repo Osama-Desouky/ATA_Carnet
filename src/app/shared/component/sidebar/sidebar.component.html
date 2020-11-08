@@ -114,9 +114,9 @@
 </div>
 </mat-sidenav-container> -->
 
-
-
-
+<div class="container">
+<div class="row no-gutters">
+<div class="col-3">
 <mat-sidenav-container>
     <mat-sidenav #sidenav role="navigation">
 		<!-- <app-sidebar-items></app-sidebar-items> -->
@@ -225,15 +225,19 @@
 
 
 	  <!--in here all the content must reside. We will add a navigation header as well-->
-	  <div class="body-margin">
-
-		  <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
-		  <!-- <main> -->
-			  <div class="container">
-
-				  <router-outlet></router-outlet>
-			  </div>
-		  <!-- </main> -->
-	  </div>
+	
     </mat-sidenav-content>
   </mat-sidenav-container>
+</div>
+
+  <div class="col-md-9 padding-custom">
+
+	<app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+	<div class="padding10">
+
+			<router-outlet></router-outlet>
+		</div>
+		<app-footer></app-footer>
+</div>
+</div>
+</div>
